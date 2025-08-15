@@ -97,10 +97,10 @@ describe('serialize', () => {
             expect(serialize('<hr>')).toEqual('---')
         });
         test('hard break', () => {
-            expect(serialize('example1<br>example2')).toEqual('example1\\\nexample2');
+            expect(serialize('example1<br>example2')).toEqual('example1\nexample2');
         });
         test('hard break with mark wrap', () => {
-            expect(serialize('example1<strong><br></strong>example2')).toEqual('example1\\\nexample2');
+            expect(serialize('example1<strong><br></strong>example2')).toEqual('example1\nexample2');
         });
         describe('table', () => {
             test('filled', () => {
