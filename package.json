@@ -3,7 +3,6 @@
   "version": "0.8.10",
   "description": "Edit markdown content in tiptap editor.",
   "scripts": {
-    "prepare": "npm run build",
     "test": "vitest",
     "dev": "vite example",
     "build": "vite build",
